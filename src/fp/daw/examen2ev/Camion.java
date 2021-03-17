@@ -1,6 +1,6 @@
 package fp.daw.examen2ev;
 
-public class Camion extends VehiculoTransporte implements Alquilable {
+public final class Camion extends VehiculoTransporte implements Alquilable {
 	// constructor
 	public Camion(String matricula, float capacidad) {
 		super(matricula, capacidad);

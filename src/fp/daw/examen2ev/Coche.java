@@ -1,6 +1,6 @@
 package fp.daw.examen2ev;
 
-public class Coche extends VehiculoPersonas {
+public final class Coche extends VehiculoPersonas {
 	// constructor
 	public Coche(String matricula, int plazas) {
 		super(matricula, plazas);

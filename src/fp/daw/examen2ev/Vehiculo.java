@@ -18,8 +18,11 @@ public abstract class Vehiculo implements Alquilable {
 	public void setMatricula(String matricula) {
 		this.matricula = matricula;
 	}
-	// este método es por si se quisiera cambiar el precio base de algún vehículo concreto
-	// (por ejemplo, para hacer más caros los deportivos, aunque sólo tengan dos plazas)
+
+	// este método es por si se quisiera cambiar el precio base de algún vehículo
+	// concreto
+	// (por ejemplo, para hacer más caros los deportivos, aunque sólo tengan dos
+	// plazas)
 	public void setPrecioBase(int precioBase) {
 		this.precioBase = precioBase;
 	}
@@ -29,12 +32,19 @@ public abstract class Vehiculo implements Alquilable {
 		this.matricula = matricula;
 	}
 
-	// método de Alquilable// métodos de Alquilable
+	// método de Alquilable
 	@Override
 	public float getPrecioAlquiler(int dias) {
 		float precioBase = getPrecioBase();
 		float precio = precioBase * dias;
 		return precio;
+	}
+
+	// método toString útil para sus herederas
+	@Override
+	public String toString() {
+		String devolver = "Vehículo con matrícula " + matricula;
+		return devolver;
 	}
 
 }

@@ -20,4 +20,11 @@ public abstract class VehiculoPersonas extends Vehiculo {
 		this.plazas = plazas;
 	}
 
+	// método toString útil para sus herederas
+	@Override
+	public String toString() {
+		String devolver = super.toString();
+		devolver += " con capacidad máxima para " + plazas + " personas.";
+		return devolver;
+	}
 }

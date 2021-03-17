@@ -26,4 +26,12 @@ public abstract class VehiculoTransporte extends Vehiculo {
 		float precio = (float) (super.getPrecioAlquiler(dias) + 20 * capacidad);
 		return precio;
 	}
+
+	// método toString útil para sus herederas
+	@Override
+	public String toString() {
+		String devolver = super.toString();
+		devolver += " con un PMA de " + capacidad + " toneladas.";
+		return devolver;
+	}
 }

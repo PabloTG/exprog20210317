@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+// no veo por qué ni dónde está el fallo, pero hay que pulsar Enter
+// para echar la calculadora a andar (no lee la primera operación)
 public class Calculadora {
 	public static void main(String[] args) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
